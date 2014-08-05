@@ -136,7 +136,7 @@ For instance:
 
 #### create actions
 
-Pass a list of actions. An action is an NSDictionary with properties "animation", "delay" and "duration" that describe how the animation should be performed. See below for the [full list of action properties](#Action-properties).
+Pass a list of actions. An action is an NSDictionary with properties "animation", "delay" and "duration" that describe how the animation should be performed. See below for the [full list of action properties](#action-properties).
 
     @{
         @"animation": [self fadeIn],
@@ -175,7 +175,7 @@ For instance in your ViewController's ``viewDidLoad``, instantiate and pass the 
 * ``completed`` : The completed state of the running animation.
 * ``count``: The number of times the animation has completed.
 
-See also [Musical rhythm](#Musical-rhythm) properties.
+See also [Musical rhythm](#musical-rhythm) properties.
 
 ## Action properties
 
@@ -261,7 +261,7 @@ Block that calls a method. Block should be of type ``FunctionBlockType`` (accept
         @"duration" : @(self.one)
     }
 
-Animation duraton in seconds, type ``NSNumber``. Alternatively use predefined musical notation: ``@(self.quarter)``, see [Musical rhythm](#Musical-rhythm).
+Animation duraton in seconds, type ``NSNumber``. Alternatively use predefined musical notation: ``@(self.quarter)``, see [Musical rhythm](#musical-rhythm).
 
 With an unison action: if no duration is passed, the duration is derived from the longest delay+duration combination in the unison list of actions.
 
@@ -272,7 +272,7 @@ With an unison action: if no duration is passed, the duration is derived from th
         @"delay" : @(self.one)
     }
     
-Animation delay in seconds, type ``NSNumber``. Alternatively use predefined musical notation: ``@(self.quarter)``, see [Musical rhythm](#Musical-rhythm).
+Animation delay in seconds, type ``NSNumber``. Alternatively use predefined musical notation: ``@(self.quarter)``, see [Musical rhythm](#musical-rhythm).
 
 ### conditional
 
