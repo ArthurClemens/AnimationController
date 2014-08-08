@@ -25,6 +25,9 @@ Set up all things animation related
     [self create];
     [self prepare];
     self.actions = [self actions];
+    [self setOnAnimationComplete:^(void){
+        NSLog(@"animation complete");
+    }];
     [self start];
 }
 

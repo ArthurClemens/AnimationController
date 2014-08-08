@@ -101,6 +101,8 @@ AnimationController is a class to create a sequence of Core Animations in code, 
 @property(atomic, readonly) CFTimeInterval eighth;
 @property(atomic, readonly) CFTimeInterval sixteenth;
 
+@property(nonatomic, copy) CompletionBlockType completionHandler;
+
 - (id)initWithView:(UIView *)UIView;
 - (void)cleanup;
 - (void)prepare;
@@ -113,6 +115,7 @@ AnimationController is a class to create a sequence of Core Animations in code, 
             animation:(CAAnimation*)animation;
 - (void)setCompletionBlock:(CompletionBlockType)block
                  animation:(CAAnimation*)animation;
+- (void)setOnAnimationComplete:(CompletionBlockType)block;
 
 @end
 

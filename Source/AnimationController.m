@@ -141,6 +141,18 @@ NSUInteger _unique_id = 0;
     [self animationDone:name];
 }
 
+/**
+Pass a callback block:
+ 
+[self setOnAnimationComplete:^(void){
+    NSLog(@"done");
+}];
+*/
+- (void)setOnAnimationComplete:(CompletionBlockType)block
+{
+    self.completionHandler = block;
+}
+
 - (void)animationDone:(NSString *)name
 {
     NSDictionary* action = _runningActions[name];
@@ -185,6 +197,9 @@ NSUInteger _unique_id = 0;
 {
     self.completed = true;
     self.count++;
+    if (self.completionHandler) {
+        self.completionHandler();
+    }
 }
 
 - (void)maybeHandleAction:(NSDictionary*)action
