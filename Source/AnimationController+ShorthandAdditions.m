@@ -1,4 +1,5 @@
 // AnimationController+ShorthandAdditions.m
+// https://github.com/ArthurClemens/AnimationController
 //
 // Copyright (c) 2014 Arthur Clemens, arthurclemens@gmail.com
 //
