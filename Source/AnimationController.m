@@ -404,7 +404,7 @@ Sets a number of default animation properties.
     [animation setRemovedOnCompletion:NO];
     [animation setFillMode:kCAFillModeForwards];
     [animation setValue:layer forKey:nil];
-    [animation setDelegate:self];
+    [(CAAnimation*)animation setDelegate:self];
 }
 
 /*
