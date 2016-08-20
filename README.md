@@ -25,7 +25,7 @@ The repository contains 4 demo projects, from simple to more complex:
 
 ### Demo videos
 
-1. [KitchenSink](http://youtu.be/Fe7lxMJTgZ4)
+1. [KitchenSink](https://youtu.be/0nmAO0puU70)
 1. [Group](http://youtu.be/Fe7lxMJTgZ4)
 1. [Disney](http://youtu.be/tjW6ka2ytCY)
 
